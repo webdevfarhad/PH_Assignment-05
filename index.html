@@ -6,10 +6,20 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/cdcfe87852.js" crossorigin="anonymous"></script>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .primary-color{
+        color: #1DD100;
+      }
+    </style>
     <title>Smart Ticketing</title>
 </head>
-<body>
-    <header class="header">
+<body class="w-[90%] mx-auto">
+    <header class="header mb-8">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -26,7 +36,7 @@
                   <li><a>Search</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl">P-Ticket</a>
+              <a class="btn btn-ghost text-3xl">P-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -39,12 +49,41 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn"><span class="text-green-400">Bus</span> <img src="./images/bus-icon.png" alt=""></a>
+              <a class="btn bg-green-100 border-green-400"><span class="text-green-500">Bus</span> <img src="./images/bus-icon.png" alt=""></a>
             </div>
           </div>
     </header>
-    <main class="main">
-
+    <main class="main ">
+      <section class="sec1">
+        <div class="bgimg-sec text-center border justify-center items-center bg-[url('/images/banner.png')] bg-no-repeat bg-cover mx-auto lg:w-[1171px] lg:h-[550px]">
+          <h1 class="text-6xl font-extrabold text-white mx-auto mt-14 mb-10">End-to-End Travel With <br> <span class="primary-color">P-Paribahan</span></h1>
+          <p class="w-[691px] text-white inline-block mb-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p> <br>
+          <button class="btn bg-[#1DD100] border-green-500">Buy Tickets</button>
+        </div>
+        <div class="reputation w-[971px] flex relative bottom-14 left-32">
+          <div class="rep1 bg-white w-[250px] flex gap-4 rounded-2xl p-5 border-b-2 items-center justify-center border-green-500 mx-auto">
+            <div class="icon"><img class="w-[100%]" src="./images/people.png" alt=""></div>
+            <div class="text">
+              <h2 class="text-2xl font-bold">500k+</h2>
+              <p class="text-gray-500">Registered users</p>
+            </div>
+          </div>
+          <div class="rep2 bg-white w-[250px] flex gap-4 rounded-2xl p-5 border-b-2 items-center justify-center border-green-500 mx-auto">
+            <div class="icon"><img class="w-[100%]" src="./images/ticket-cupon.png" alt=""></div>
+            <div class="text">
+              <h2 class="text-2xl font-bold">1.7lacs</h2>
+              <p class="text-gray-500">Tickets Sold</p>
+            </div>
+          </div>
+          <div class="rep3 bg-white w-[250px] flex gap-4 rounded-2xl p-5 border-b-2 items-center justify-center border-green-500 mx-auto">
+            <div class="icon"><img class="w-[100%]" src="./images/stoppage.png" alt=""></div>
+            <div class="text">
+              <h2 class="text-2xl font-bold">80k+</h2>
+              <p class="text-gray-500">Rental Partner</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
 
