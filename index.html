@@ -132,7 +132,7 @@
           <button class="btn text-[#1DD100] text-xl font-[500] px-5 border-green-500">See All Offers</button>
         </div>
       </section>
-      <section class="sec3 bg-[#F7F8F8] border-t-2 border-green-500 rounded-t-[80px]">
+      <section class="sec3 bg-[#F7F8F8] border-t-2 border-[#1DD100]  rounded-t-[80px]">
         <div class="s3-textsec">
           <div class="header-text text-center mx-auto">
             <h3 class="text-4xl font-bold pt-[100px]">P.H Paribahan</h3>
@@ -188,7 +188,7 @@
 
         <!-- Section 3 Part-2 Departure info -->
 
-        <div class="s3-m2 flex justify-around w-[90%] rounded-t-3xl mt-10 bg-white mx-auto">
+        <div class="s3-m2 flex justify-around w-[90%] rounded-3xl mt-10 mb-[100px] bg-white mx-auto">
           <!-- Section 3 Seat planning left part -->
           <div class="s3-m2-001 border-r-2 border-dashed">
             <!-- Selected available part -->
@@ -206,7 +206,7 @@
             </div>
             <div class="driver-seat flex justify-end">
               <button class="btn px-7 mr-5"><img class="h-[25px]" src="./images/Group 56.png" alt=""></button>
-            </div><br>
+            </div>
 
             <!-- Bus seats diagram -->
             <div class="seat-plan grid grid-cols-5 gap-4 mx-auto p-5">
@@ -302,11 +302,34 @@
                   <p class="font-[400]">BDT <span>1100</span></p>
                 </div>
               </div>
-
-
             </div>
-            <div class="passenger-data">
-
+            <div class="passenger-data p-5 my-10 w-[430px]">
+              <form action="">
+                <!-- <label class="input input-bordered flex items-center gap-2">
+                  <input type="text" class="grow" placeholder="Your Name" required/> 
+                </label><br>
+                <label class="input input-bordered flex items-center gap-2">
+                  <input type="email" class="grow" placeholder="Your Email"/>
+                </label><br>
+                <label class="input input-bordered flex items-center gap-2">
+                  <input type="number" class="grow" placeholder="Phone Number" required/>
+                </label><br> -->
+                <label for=""><span class="font-bold">Passenger Name: *</span><br>
+                <input class="input input-bordered w-full" type="text" placeholder="Your Name" required></label><br><br>
+                <label for="">
+                  <span class="font-bold">Phone Number: *</span> <br>
+                  <input class="input input-bordered w-full" type="number" placeholder="Phone Number" required>
+                </label><br><br>
+                <label for="">
+                  <span class="font-bold">Email: </span><br>
+                  <input class="input input-bordered w-full" type="email" placeholder="Your Email">
+                </label><br><br>
+                <button class="btn text-xl mt-2 w-[100%] text-white bg-[#1DD100] disabled:">Next</button>
+              </form><br>
+              <div class="terms-conditions flex justify-around">
+                <a class="underline" href="">Terms and Conditions</a>
+                <a class="underline" href="">Cancellation Policy</a>
+              </div>
             </div>
           </div>
         </div>
